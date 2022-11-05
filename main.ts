@@ -4,9 +4,8 @@ basic.forever(function () {
     distance = Tinybit.Ultrasonic_Car()
     if (distance < 20 && distance > 2) {
         Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_SpinLeft, 50)
-        music.ringTone(131)
         basic.pause(randint(100, 200))
     } else {
-        Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_Run, 125)
+        Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_Run, 150)
     }
 })
